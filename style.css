@@ -1,0 +1,917 @@
+/* Elements principaux de la page */
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+body
+{
+    max-width: 1400px;
+}
+
+main
+{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+h1
+{
+    font-size: 22px;
+}
+
+h2
+{
+    font-size: 18px;
+}
+
+h3
+{
+    font-size: 16px;
+}
+
+p
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header, .searchfilters, .sectionoffers, .activity, footer  
+{
+    width: 94%;
+}
+
+
+/* Header */ 
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+/* Logo */
+
+.header-logo img
+{
+    width: 61.09px;
+    height: 19px;
+}
+
+/* Navigation */
+
+.header-nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.header-nav li
+{
+    padding-left: 67px;
+}
+
+.header-nav a
+{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    border-top: solid 2px transparent;
+    padding: 46px 15px 0px 15px;
+}
+
+.header-nav a:hover
+{
+    border-color: #0065FC;
+}
+
+/* Recherche et filtre */
+
+.searchfilters
+{
+    margin-top: 60px;
+}
+
+/* Introduction */
+
+.searchfilters-title p
+{
+    margin-top: 8px;
+}
+
+/* Formulaire de recherche */ 
+
+.searchfilters-form
+{
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.searchfilters-form .fa-location-dot
+{
+    border: solid 1px #F2F2F2;
+    padding: 16px 18px 15px 18px;
+    border-radius: 15px 0px 0px 15px; 
+    background-color: #F2F2F2;
+    font-size: 1.15em;
+}
+
+.searchfilters-search
+{
+    padding-left: 16px;
+    border: solid 1px #F2F2F2; 
+    border-right: none;
+    border-left: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.searchfilters-buttonwithtext
+{
+    border: solid 1px #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC; 
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 14px 16px 14px 16px;
+}
+
+.button-search
+{
+    display: none;
+}
+
+/* Filtres de recherche */ 
+
+.filters-container
+{
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.filters-listboutton
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters-button
+{
+    display: flex;
+    align-items: center;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.filters-button i
+{
+    padding: 14px 10px 14px 20px;
+    font-size: 1.25em;
+    color: #0065FC;
+}
+
+.filters-button p
+{
+    font-weight: 700;
+    font-size: 17px;
+    padding-right: 20px;
+}
+
+.filters-button:hover
+{
+    background-color: #DEEBFF;
+}
+
+/* Infobar */ 
+
+.infobar
+{
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.infobar i 
+{
+    border: solid 2px #D9D9D9;
+    border-radius: 50%;
+    color: #0065FC;
+    padding: 7px 10px 7px 10px;
+    font-size: 0.65em;
+}
+
+.infobar p 
+{
+    margin-left: 11px;
+}
+
+
+
+/* Offers/Main/Sponsored */ 
+
+.sectionoffers
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+/* Offers/Main */
+
+.offersmain
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.offersmain h1 
+{
+    padding: 42px 0px 0px 45px;
+    width: 100%;
+}
+
+    /* Cards Main */
+
+.offersmain-packageofferscards
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.offersmain-cards
+{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:#FFFFFF;
+    margin: 15px 0px 15px 0px;
+    box-shadow: 4px 4px 5px #D9D9D9;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.offersmain-cards img
+{
+    border: solid 5px #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+}
+
+.offersmain-descriptioncards
+{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 14px 0px 16px;
+}
+
+.offersmain-descriptioncards h3
+{
+    padding-bottom: 9px;
+}
+
+.offersmain-descriptioncards p
+{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 9px;
+}
+    /* Notation*/
+
+.offersmain-notations
+{
+    display: flex;
+    padding-bottom: 11px;
+}
+
+.fa-star
+{
+    color: #0065fc;
+    font-size: 0.75em;
+    margin-right: 2px;
+}
+
+.fa-star.grey
+{
+ color: #F2F2F2;   
+}
+
+/* more */
+
+.offersmain-more
+{
+    width: 100%;
+    padding: 25px 0px 46px 44px;
+}
+
+/* Offers/Sponsored */
+
+.offersponsored
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.offersponsored-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 42px;
+}
+
+.offersponsored-list
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 9.5px;
+}
+
+.offersponsored-title i
+{
+    padding-left: 118px;
+    color: #0065fc;
+    font-size: 1.2em;
+}
+
+.offersponsored-cards
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 16.5px 0px 16.5px 0px;
+    box-shadow: 4px 4px 5px #D9D9D9;
+    text-decoration: none;
+    color: #000000;
+}
+
+.offersponsored-boximg
+{
+    width: 40%;
+    height: 144px;
+}
+
+.offersponsored-cards img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.offersponsored-descriptioncards
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px 0px 11px 15px;
+}
+
+.offerssponsored-notations
+{
+    display: flex;
+    align-items: flex-end;
+}    
+
+.offersponsored-descriptioncards p
+{
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Activity */ 
+
+.activity
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.activity-cards
+{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px #D9D9D9;
+    text-decoration: none;
+    color: #000000;
+}
+
+.activity-list
+{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 18px;
+}
+
+.activity-cards img
+{
+    width: 100%;
+    height: 389px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.activity-text
+{
+    display: flex;
+    height: 56px;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+}
+
+/* Footer */ 
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    margin: 60.51px 53px 0px 48px;
+    padding-bottom: 46px;
+}
+
+.footer-set
+{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0px 0px 70px;
+    margin-right: 160px;
+}
+
+.footer-set h2
+{
+    padding-bottom: 20px;
+}
+
+.footer-set ul
+{
+    list-style-type: none;
+}
+.footer-set li
+{
+    padding-bottom: 12px;
+    
+}
+
+.footer-set a
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+/***** Responsive Tablette *****/
+    /****       1400-992        *****/
+
+@media screen and (max-width: 992px) 
+{
+
+    /* Header */ 
+
+    header, .searchfilters, .sectionoffers, .activity, footer  
+    {
+        width: 90%;
+    }
+
+    /* Filters */
+    .filters-container
+    {
+        margin-top: 46px;
+        display: flex;
+        align-items: center;
+    }
+
+    .filters-button
+{
+    margin-left: 20px;
+}
+
+    
+    /* Search */
+    .button-search
+    {
+        display: none;
+    }
+    /* Offres */
+
+    .sectionoffers
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+}
+    /* Offermain*/
+
+.offersmain
+{
+    width: 100%;
+    margin: 0;
+}
+
+    /* Offersponsored */
+
+.offersponsored
+{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 53px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.offersponsored-title
+{
+    justify-content: space-between;
+}
+
+.offersponsored-list
+{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
+
+.offersponsored-cards
+{
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+}
+
+.offersponsored-boximg
+{
+    width: 45%;
+}
+
+.offersponsored-text h3 
+{
+    font-size: 14px;
+    padding-right: 25px;
+}
+
+.offersponsored-text p
+{
+    font-size: 13px;
+}
+
+.offersponsored-descriptioncards
+{
+    width: 55%;
+    margin-left: 10px; 
+}
+/* Activity */
+
+.activity-list
+{
+    margin-top: 34px;
+}
+
+.activity-cards
+{
+    height: 267px;
+}
+
+.activity-cards img 
+{
+    height: 211px;
+}
+
+.activity-text h3
+{
+    display: flex;
+}
+/* Footer*/
+
+.footer-set
+{
+    margin-right: 20px;
+}
+}
+
+/***** Responsive Mobile *****/
+    /****               *****/
+
+    @media screen and (max-width: 768px) 
+{
+/* Width générale */ 
+
+header, .searchfilters, .sectionoffers, .activity, footer  
+{
+    width: 100%;
+}
+
+/* Header */ 
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 0;
+}
+
+/* Header Logo */
+
+.header-logo
+{
+    padding-top: 21px;
+    padding-left: 0px;
+}
+
+.header-nav
+{
+    width: 100%;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+       
+}
+.header-nav li
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 23px;
+    border-bottom: solid 3px #F2F2F2;
+}
+.header-nav a
+{
+    text-decoration: none;
+    color: #000000;
+    border-top: none;
+    padding: 46px 15px 0px 15px;
+}
+.header-nav li:hover
+{
+    border-color: #0065fc;
+}
+
+.header-nav a:hover 
+{
+    color: #0065fc
+}
+
+
+/* Recherche */
+.searchfilters
+{
+    width: 94%;
+    margin: 0;
+    margin-top: 31px;
+}
+
+.searchfilters-buttonwithtext
+{
+    display: none;
+}
+
+.button-search
+{
+    display: flex;
+}
+
+.button-search button
+{
+    background-color: #0065fc;
+    border: solid 1px #0065fc;
+    border-radius: 0px 15px 15px 0px;
+}
+.searchfilters-form
+{
+    margin-top: 36px;
+}
+
+.button-search i 
+{
+    padding-left:  16px;
+    padding-right: 16px;
+    color: #FFFFFF;
+}
+
+/* Filters */ 
+
+.filters-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-container h2
+{
+    width: 100%;
+}
+
+.filters-listboutton
+{
+    margin-top: 6.5px;
+    display: flex;
+}
+
+.filters-button
+{
+    margin: 0;
+    width: 160px;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.filters-button i
+{
+    padding-left: 13px;
+    padding-right: 5px;
+
+}
+
+.filters-button p 
+{
+    font-size: 11px;
+    padding: 0   
+}
+
+/* Infobar */
+
+.infobar p 
+{
+    margin-top: 20px;
+}
+
+
+.infobar i
+{
+    border: solid 1px #D9D9D9;
+    font-size: 0.8em;
+}
+
+/* Offres */ 
+
+.sectionoffers
+{
+    margin: 0;
+    flex-direction: column-reverse;
+}
+
+/* Les plus populaires */
+
+.offersponsored-list
+{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20.5px;
+    width: 90%;
+}
+
+.offersponsored 
+{
+    
+    border-radius: 0;
+}
+
+.offersponsored-title
+{
+    margin-top: 28px;
+}
+
+.offersponsored-title i
+{
+    padding: 0;
+}
+
+.offersponsored-cards
+{
+    margin-top: 5.5px;
+    margin-bottom: 5.5px;
+}
+
+/* Hébergement à Marseille */
+
+.offersmain
+{
+    background-color: #FFFFFF;
+}
+
+.offersmain h1 
+{
+    padding-top: 26px;
+    padding-left: 20px;
+}
+
+.offersmain-packageofferscards
+{
+    flex-direction: column;
+    margin-top: 14px;
+}
+
+.offersmain-cards
+{
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.offersmain-more
+{
+    display: none;
+}
+
+/* Les plus populaires */
+
+.activity
+{
+    margin: 0;
+    margin-top: 105px;
+}
+
+.activity-list
+{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+
+.activity-cards
+{
+    width: 90%;
+    height: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.activity-cards img 
+{
+    height: 134px;
+}
+
+.activity-title
+{
+    margin-right: 250px;
+    margin-left: 22px;
+}
+
+/* Footer */
+
+footer
+{
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.footer-set
+{
+    padding-left: 30px;
+    margin: 0;
+}
+}
