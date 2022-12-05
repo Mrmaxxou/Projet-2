@@ -502,7 +502,7 @@ footer
 /***** Responsive Tablette *****/
     /****       1400-992        *****/
 
-@media screen and (max-width: 992px) 
+@media screen and (max-width: 991.9px) 
 {
 
     /* Header */ 
@@ -631,7 +631,7 @@ footer
 /***** Responsive Mobile *****/
     /****               *****/
 
-@media screen and (max-width: 767px) 
+@media screen and (max-width: 767.9px) 
 {
 /* Width générale */ 
 
@@ -758,7 +758,7 @@ header
 {
     margin-top: 6.5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .filters-button
